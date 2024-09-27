@@ -11,7 +11,7 @@ function App() {
 
   return (
     <>
-      {/* <BrowserRouter>
+      <BrowserRouter>
         <Layout>
           <Routes>
             <Route path='/' element={<HomePage/>}></Route>
@@ -20,9 +20,9 @@ function App() {
             <Route path='*' element={<NotFoundPage/>}></Route>
           </Routes>
         </Layout>
-      </BrowserRouter> */}
+      </BrowserRouter>
 
-      <NotFoundPage/>
+      {/* <NotFoundPage/> */}
     </>
   )
 }
