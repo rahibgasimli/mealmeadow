@@ -1,38 +1,28 @@
-import { useState } from 'react'
 import './App.css'
-import Navbar from './layout/user/Navbar'
-import Footer from './layout/user/Footer'
-import Partnyor from './components/home/Partnyor'
-import Contact from './components/home/Contact'
-import Register from './pages/user/auth/Register'
-import Login from './pages/user/auth/Login'
-import EndirimCard from './components/home/EndirimCard'
-import HomeMainSlide from './components/home/HomeMainSlide'
-import PhotoSlide from './components/home/PhotoSlide'
-import RestoranCard from './components/home/RestoranCard'
-import CloseRestorans from './components/home/CloseRestorans'
-import BravoCard from './components/home/BravoCard'
-import EndirimliMehsullar from './components/home/EndirimliMehsullar'
-import HomePage from './pages/user/home/HomePage'
+
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Layout from "./layout/user/Layout"
+import HomePage from "./pages/user/HomePage"
+import Login from "./pages/user/auth/Login"
+import Register from "./pages/user/auth/Register"
+import NotFoundPage from './pages/user/NotFoundPage'
 
 function App() {
 
   return (
     <>
-      {/* <Navbar/> */}
-      {/* <HomePage/> */}
-      {/* <Partnyor/> */}
-      {/* <Contact/>  */}
-      {/* <Footer/> */}
-      <Register/>
-      {/* <Login/> */}
-      {/* <EndirimCard/> */}
-      {/* <HomeMainSlide/> */}
-      {/* <PhotoSlide/> */}
-      {/* <RestoranCard /> */}
-      {/* <CloseRestorans/> */}
-      {/* <BravoCard/> */}
-      {/* <EndirimliMehsullar/> */}
+      {/* <BrowserRouter>
+        <Layout>
+          <Routes>
+            <Route path='/' element={<HomePage/>}></Route>
+            <Route path='/login' element={<Login/>}></Route>
+            <Route path='/register' element={<Register/>}></Route>
+            <Route path='*' element={<NotFoundPage/>}></Route>
+          </Routes>
+        </Layout>
+      </BrowserRouter> */}
+
+      <NotFoundPage/>
     </>
   )
 }

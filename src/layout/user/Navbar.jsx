@@ -2,6 +2,7 @@ import React from 'react'
 
 import logo from "../../assets/images/home/navbar-logo.svg"
 import { CiHeart,CiShoppingBasket,CiLogin,CiSearch} from "react-icons/ci";
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
@@ -10,9 +11,9 @@ const Navbar = () => {
             <div className="navbar-logo"><img src={logo} alt="" /></div>
             <input type="text" />
             <div className="navbar-top-buttons">
-                <CiHeart/>
-                <CiShoppingBasket className='shopping-basket'/>
-                <CiLogin/>
+                <Link to=""><CiHeart/></Link>
+                <Link to=""><CiShoppingBasket className='shopping-basket'/></Link>
+                <Link to="/login"><CiLogin/></Link>
             </div>
         </div>
 

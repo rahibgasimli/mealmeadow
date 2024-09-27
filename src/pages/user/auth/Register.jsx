@@ -1,5 +1,8 @@
 import React from 'react'
 
+import { Link } from 'react-router-dom'
+
+
 import gmailLogo from "../../../assets/images/auth/gmail-logo.svg"
 import registerLeft from "../../../assets/images/auth/register-left.svg"
 
@@ -22,7 +25,7 @@ const Register = () => {
         <button type="submit">Daxil ol</button>
         <span>və ya</span>
         <a href='#'><img src={gmailLogo} alt="" /></a>
-        <h6>Hesabınız var?<a href="#"> Daxil olun</a></h6>
+        <h6>Hesabınız var?<Link to="/login"> Daxil olun</Link></h6>
       </div>
     </section>
   )
