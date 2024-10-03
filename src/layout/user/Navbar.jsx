@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <div className="navbar">
         <div className="navbar-top">
-            <div className="navbar-logo"><img src={logo} alt="" /></div>
+            <div className="navbar-logo"><Link to="/"><img src={logo} alt="" /></Link></div>
             <input type="text" />
             <div className="navbar-top-buttons">
                 <Link to=""><CiHeart/></Link>

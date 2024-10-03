@@ -7,9 +7,9 @@ const NotFoundPage = () => {
   return (
     <div className="not-found-page">
       <div className="not-found-image"><img src={notFoundImg} alt="" /></div>
-      <h6>Hal-hazırda heç bir məhsul tapılmadı</h6>
+      <h5>Hal-hazırda heç bir məhsul tapılmadı</h5>
       <div className="not-found-mehsullar">
-        <h2>Digər<span> məhsullar</span></h2>
+        <h3 className='diger-mehsullar'>Digər<span> məhsullar</span></h3>
         <div className="not-found-cards">
           <EndirimCard/>
           <EndirimCard/>
