@@ -1,0 +1,1536 @@
+@import url(reset.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* font-family: "Italianno", cursive; */
+
+:root{
+    --main-yellow:#fcbe08;
+}
+
+body{
+    box-sizing: border-box;
+    max-width: 2000px;
+    font-family: "Poppins", sans-serif;
+}
+/* NAVBAR START */
+.navbar-top{
+    background-color: var(--main-yellow);
+}
+
+.navbar-top{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 75px;
+    padding-right: 90px;
+    align-items: center;
+}
+
+.navbar-top input{
+    width: 307px;
+    height: 38px;
+    border-radius: 24px;
+    border: none;
+    outline: none;
+}
+
+.navbar-top-buttons a{
+    font-size: 25px;
+    color: #F5F5F5;
+    padding-top: 28px;
+    padding-bottom: 21px;
+} 
+
+.navbar-top .shopping-basket{
+    padding: 0 17px;
+}
+
+.navbar-bottom{
+    display: flex;
+    padding-left: 75px;
+    background-color: red;
+    padding-top: 26.5px;
+    padding-bottom: 16.5px;
+    text-align: center;
+    background: #F5F5F5;
+}
+
+.navbar-bottom a {
+    text-decoration: none;
+    padding-right: 16px;
+    color: #313131;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+    transition: linear 0.2s;
+}
+
+.navbar-bottom a:hover{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    color: var(--main-yellow);
+}
+
+/* NAVBAR END */
+
+/* ENDIRIMLI MEHSULLAR START */
+
+.endirim-mehsullar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.endirim-mehsullar h1{
+    margin-bottom: 80px;
+    margin-top: 78px;
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 29.58px;
+    color: var(--main-yellow);
+}
+
+.endirim-mehsullar h1 span{
+    padding-right: 5px;
+    font-weight: 700;
+}
+
+.endirim-mehsullar-top{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.endirim-mehsullar-bottom{
+    display: flex;
+}
+
+.endirim-mehsullar button{
+    width: 161px;
+    height: 48px;
+    border-radius: 24px;
+    background: linear-gradient(90.00deg, rgb(255, 210, 11),rgb(246, 147, 0) 100%);
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21px;
+    color: #F5F5F5;
+    margin-top: 50px;
+    margin-bottom: 39px;
+}
+
+.endirim-card{
+    /* display: flex; */
+    width: 300px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    margin-right: 20px;
+}
+
+.endirim-card-top{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10px;
+} 
+
+.endirim-card-top h4{
+    color: rgb(197, 34, 31);
+    font-family: Italianno;
+    font-size: 50.11px;
+    font-weight: 400;
+    line-height: 35.9px;
+    margin-top: 20px;
+    margin-right: 16px;
+}
+
+
+.endirim-card-image img{
+    width: 100%;
+    border-radius: 50%;
+    display: block;
+}
+
+
+
+.endirim-card-content h2{
+    font-family: Italianno;
+    font-size: 35.08px;
+    font-weight: 400;
+    line-height: 25.13px;
+    margin-left: 16px;
+
+}
+
+.endirim-card-content h6{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    margin-left: 16px;
+    padding-top: 7px;
+    padding-bottom: 4.51px;
+}
+
+.endirim-card-content p{
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 16px;
+    margin-left: 16px;
+    padding-bottom: 15px;
+}
+
+
+.endirim-card-bottom{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 16px;
+    align-items: center;
+    margin-right: 16px;
+}
+
+.endirim-card-bottom .price{
+    font-family: Bebas Neue;
+    font-size: 11.96px;
+    font-weight: 400;
+    text-decoration:line-through;
+}
+
+.endirim-card-bottom .endirimli-price{
+    font-family: Bebas Neue;
+    font-size: 20.44px;
+    font-weight: 400;
+}
+
+.endirim-card-bottom .card-buttons{
+    font-size: 28px;
+    display: flex;
+    text-align: center;
+    color: #0E0E0E;
+    cursor: pointer;
+    align-items: center;
+}
+
+.card-buttons .card-sebet{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: linear-gradient(90.00deg, rgb(255, 210, 11) 7.201%,rgb(246, 147, 0) 108.01%);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    color: #F5F5F5;
+}
+
+.endirim-card-bottom .card-buttons .card-favori{
+    color: black;
+}
+
+/* ENDIRIMLI MEHSULLAR END */
+
+/* PHOTO SLIDE START */
+
+.photo-slider{
+    height: 107px;
+    margin-bottom: 85px;
+}
+
+
+/* PHOTO SLIDE END */
+
+/* YAXIN RESTORANLAR START */
+
+.yaxin-restoranlar{
+    position: relative;
+    width: 100%;
+    margin-bottom: 869px;
+}
+
+.yaxin-restoranlar-image{
+    position: absolute;
+}
+
+.yaxin-restoranlar-image img{
+    width: 100%;
+
+}
+
+.yaxin-restoranlar-content{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 40px;
+}
+
+
+.yaxin-restoranlar-content h1{
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 29.58px;
+    color: var(--main-yellow);
+    padding-bottom: 48px;
+}
+
+.yaxin-restoranlar-content span{
+    font-weight: 700;
+    padding-right: 5px;
+}
+
+
+
+.yaxin-restoranlar-top{
+    display: flex;
+}
+
+.yaxin-restoranlar-bottom{
+    display: flex;
+}
+
+
+.yaxin-restoranlar-content button{
+    border-radius: 28.17px;
+    background: linear-gradient(90.00deg, rgb(255, 210, 11),rgb(246, 147, 0) 100%);
+    border: none;
+    width: 189px;
+    height: 56px;
+    font-size: 18.78px;
+    font-weight: 500;
+    line-height: 24.65px;
+    letter-spacing: -5%;
+    text-align: center;
+    color: #F5F5F5;
+    margin-top: 50px;
+}
+
+.restoran-card{
+    position: relative;
+    width: 399px;
+    height: 269px;
+    display: flex;
+    justify-content: center;
+}
+
+.restoran-card-image{
+    position: absolute;
+}
+
+.restoran-card-image img{
+    width: 100%;
+}
+
+.restoran-card-border{
+    position: absolute;
+    background-color: rgba(255, 160, 1, 0.35);
+    height: 89px;
+    width: 389px;
+    border-radius: 0px 0px 21.54px 21.54px; 
+    bottom: 8px;
+}
+
+.restoran-card-border h1{
+    margin-top: 15px;
+    margin-left: 10px;
+    color: rgb(255, 255, 255);
+    font-family: Italianno;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 28.14px;
+}
+
+/* YAXIN RESTORANLAR END */
+
+/* BRAVO CARD START */
+
+.bravo-cards{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 70px;
+    padding-bottom: 80px;
+}
+
+
+
+.bravo-card{
+    position: relative;
+    width: 600px;
+    height: 355px;
+}
+
+.bravo-card-image{
+    position: absolute;
+}
+
+.bravo-card button{
+    position: absolute;
+    left: 25px;
+    bottom: 50px;
+    border-radius: 20.18px;
+    background-color: var(--main-yellow);
+    border: none;
+    width: 135.38px;
+    height: 40.36px;
+    font-size: 13.45px;
+    font-weight: 500;
+    line-height: 17.66px;
+    letter-spacing: -5%;
+    color: #F5F5F5;
+    cursor: pointer;
+}
+
+.bravo-card-image img{
+    width: 100%;
+}
+
+
+/* BRAVO CARD END */
+
+/* PARTNYOR START */
+
+.partnyorlar{
+    padding-top: 40px;
+    padding-bottom: 100px;
+    /* background-color: turquoise; */
+}
+
+.partnyorlar h1{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 29.58px;
+    color: var(--main-yellow);
+    display: flex;
+    justify-content: center;
+}
+
+.partnyorlar .mySwiper{
+    margin-left: 102px;
+    margin-right: 102px;
+    margin-top: 72px;
+    /* background-color: red; */
+}
+
+.partnyorlar .mySwiper .slide img{
+    border: 1px solid gray;
+    width: 100%;
+} 
+
+/* PARTNYOR END */
+
+/* HOME MAIN SLIDER START */
+
+.home-swipper{
+    width: 100%;
+    height: 560px;
+    margin-top: -1px;
+}
+
+.home-main-slide{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.main-slide-image{
+    position: absolute;
+    width: 100%;
+    margin: 0 -0px;
+    top: 0;
+}
+
+.main-slide-image img{
+    height: 555px;
+    width: 100%;
+}
+
+.home-main-slide button{
+    position: absolute;
+    z-index: 9999;
+    margin-top: 450px;
+    border-radius: 24px;
+    background: linear-gradient(90.00deg, rgb(255, 210, 11),rgb(246, 147, 0) 100%);
+    width: 161px;
+    height: 49.3px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: -5%;
+    border: none;
+    cursor: pointer;
+}
+
+/* HOME MAIN SLIDER END */
+
+
+/* HOME CATEGORIES START */
+
+.home-categories{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -9px;
+    margin-bottom: 300px;
+}
+
+.home-categories-img{
+    position: absolute;
+}
+
+.home-categories .categories{
+    position: absolute;
+    display: flex;
+    margin-top: 120px;
+}
+
+.home-categories .categories img{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.home-categories-img img{
+    width: 100%;
+}
+
+
+/* HOME CATEGORIES END */
+
+/* BIZIMLE ELAQE START */
+
+.bizimle-elaqe{
+    position: relative;
+    width: 100%;
+    margin-bottom: 463px;
+}
+
+
+.contact-image{
+    position: absolute;
+    margin: 0 -0px;
+}
+
+
+
+.contact-image img{
+    width: 100%;
+}
+
+
+.contact-inputs{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 36px;
+}
+
+.contact-inputs h1{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 29.58px;
+    background: linear-gradient(90.00deg, rgb(255, 160, 1),rgb(201, 130, 13));
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    background-clip:text;
+}
+
+.contact-inputs form{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 35px;
+    align-items: center;
+}
+
+.contact-inputs form input{
+    width: 290px;
+    height: 48px;
+    border-radius: 8px;
+    margin-right: 12px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 21px;
+    letter-spacing: -5%;
+    color: #313131;
+}
+
+.contact-inputs form input::-webkit-input-placeholder{
+    padding-left: 10px;
+}
+
+.contact-inputs form textarea{
+    width: 604px;
+    height: 153px;
+    resize: none;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    margin-top: 16px;
+    color: #313131;
+}
+
+
+.contact-inputs form textarea::-webkit-input-placeholder{
+    padding-top: 8px;
+    padding-left: 10px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 21px;
+    letter-spacing: -5%;
+}
+
+.contact-inputs form button{
+    border-radius: 24px;
+    background: linear-gradient(86.57deg, rgb(224, 109, 28) 0.351%,rgb(247, 172, 69) 99.649%);
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: -5%;
+    color: #F5F5F5;
+    width: 143.16px;
+    height: 48px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+
+/* BIZIMLE ELAQE END */
+
+/* FOOTER START */
+
+.footer{
+    background-color: #F5F5F5;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-logo{
+    padding-left: 106px;
+    padding-top: 80px;
+}
+
+.footer h3{
+    padding-bottom: 25px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #0E0E0E;
+}
+
+.footer a{
+    transition: 0.2s;
+}
+
+.footer a:hover{
+    color: #fcbe08;
+}
+
+.footer-links{
+    display: flex;
+    flex-direction: column;
+    padding-top: 45px;
+    padding-bottom: 20px;
+}
+
+.footer-links a{
+    text-decoration: none;
+    padding-bottom: 20px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 20px;
+    color: #0E0E0E;
+}
+
+.footer-contact{
+    display: flex;
+    flex-direction: column;
+    padding-top: 45px;
+}
+
+.footer-contact a{
+    text-decoration: none;
+    display: flex;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 13px;
+    color: #0E0E0E;
+    padding-bottom: 22.85px;
+    align-items: center;
+}
+
+.footer-contact-phone{
+    font-size: 17px;
+    padding-right: 5px;
+    color: #fcbe08;
+}
+
+.footer-contact-mail{
+    font-size: 17px;
+    padding-right: 5px;
+    color: #fcbe08;
+}
+
+.footer-contact .email-input{
+
+    display: flex;
+    align-items: center;
+}
+
+.footer-contact .email-input input{
+    border: none;
+    width: 135.86px;
+    height: 30px;
+    border: none;
+    outline: none;
+    font-size:  11px;
+    font-weight: 300;
+    line-height: 12.86px;
+    letter-spacing: -5%;
+    padding-left: 5px;
+}
+
+.footer-contact .email-input button{
+    width: 41.49px;
+    height: 32px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: linear-gradient(180.00deg, rgb(255, 160, 1),rgb(255, 191, 0) 100%);
+    color: #F5F5F5;
+    cursor: pointer;
+}
+
+.footer-socials{
+    display: flex;
+    flex-direction: column;
+    padding-right: 150px;
+    padding-top: 45px;
+}
+
+.footer-socials a{
+    color: var(--main-yellow);
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+.footer-bottom{
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 15px;
+    display: flex;
+    justify-content: center;
+    background-color: #0E0E0E;
+    color: white;
+    padding: 15px;
+}
+
+/* FOOTER END */
+
+/* NOT FOUND START */
+
+.not-found-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.not-found-image{
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+
+.not-found-image img{
+    width: 100%;
+}
+
+.not-found-page h5{
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 20px;
+    text-align: center;
+    padding-bottom: 175px;
+}
+
+.not-found-mehsullar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.not-found-mehsullar .diger-mehsullar{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 29.58px;
+    background: linear-gradient(90.00deg, rgb(255, 160, 1),rgb(201, 130, 13));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    padding-bottom: 80px;
+}
+
+.not-found-mehsullar .diger-mehsullar span{
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 29.58px;
+}
+
+.not-found-cards{
+    display: flex;
+    padding-bottom: 180px;
+}
+
+
+
+/* NOT FOUND END */
+
+/* PRODUCT-DETAILS START */
+
+.product-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-details h1{
+    padding-top: 50px;
+    background: linear-gradient(90.00deg, rgb(255, 160, 1),rgb(201, 130, 13));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29.58px;
+}
+
+.product-details h1 b{
+    font-weight: 700;
+}
+
+.product-details-center{
+    display: flex;  
+    padding-top: 56px;
+}
+
+.product-details-left{
+    margin-right: 123px;
+    padding-top: 20px;
+    background: linear-gradient(180.00deg, rgba(245, 245, 245, 0.58) 3%,rgba(245, 245, 245, 0.58) 66.5%);
+    box-shadow: 0px 4px 4px 0px rgba(51, 38, 174, 0.09);
+}
+
+.product-details-right h3{
+    background: linear-gradient(90.00deg, rgb(255, 160, 1),rgb(201, 130, 13));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 40.95px;
+    margin-top: 70px;
+}
+
+.product-details-right h4{
+    color: rgb(130, 185, 65);
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    padding-top: 5px;
+    padding-bottom: 16px;
+}
+
+.product-details-right h6{
+    background: linear-gradient(90.00deg, rgb(255, 160, 1),rgb(201, 130, 13));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+
+.product-details-right p{
+    color: rgba(49, 49, 49, 0.7);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.product-details-stars{
+    margin-top: 16px;
+    font-size: 20px;
+    color:  rgb(255, 160, 1);
+}
+
+.product-details-price{
+    display: flex;
+    margin-top: 15px;
+}
+
+.product-details-price h4{
+    color: rgba(49, 49, 49, 0.89);
+    font-size: 24.34px;
+    font-weight: 400;
+}
+
+.product-details-price span{
+    color: rgba(49, 49, 49, 0.7);
+    font-size: 12.84px;
+    font-weight: 400;
+    margin-top: 14px;
+    margin-left: 10px;
+    text-decoration:line-through;
+}
+
+.product-details-bottom{
+    display: flex;
+    margin-top: 18px;
+    align-items: center;
+    justify-content: left;
+}
+
+.product-count{
+    height: 48px;
+    display: flex;
+    border: 1px solid rgba(49, 49, 49, 0.15);
+    align-items: center;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.product-count button{
+    width: 46px;
+    border: none;
+    color: rgba(49, 49, 49, 0.89);
+    font-size: 24px;
+    font-weight: 400;
+    cursor: pointer;
+    background: none;
+}
+
+.product-count h2{
+    width: 46px;
+    color: rgba(49, 49, 49, 0.89);
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.product-details-bottom .favori{
+    border: none;
+    background:none;
+    font-size: 25px;
+    cursor: pointer;
+
+}
+
+.product-details-bottom button:hover{
+    color: var(--main-yellow);
+    transition: 0.2s;
+}
+
+.product-details-bottom .sebet{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+@media(max-width:576px){
+    .product-details h1{
+        font-size: 20px;
+    }
+    
+    .product-details-center{
+        flex-direction: column;
+    }
+
+
+    .product-details-left{
+        margin: 0;
+        padding: 0;
+    }
+
+    .product-details-right{
+        margin: 0;
+        padding: 0;
+        align-items: start;
+        margin-left: 20px;
+    }
+
+    .product-details-right h3{
+        font-size: 30px;
+    }
+}
+
+
+/* PRODUCT-DETAILS END */
+
+/* BASKET START */
+
+.basket-page{
+    padding-top: 50px;
+    background-image: url(./assets/images/auth/forgotpassword.svg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 160px;
+}
+
+
+.basket-total{
+    display: flex;
+    flex-direction: column;
+    width: 842px;
+}
+
+.basket-total h4{
+    color: rgba(49, 49, 49, 0.7);
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: -4%;
+}
+
+.basket-total h6{
+    color: rgba(49, 49, 49, 0.75);
+    font-size: 16.82px;
+    font-weight: 300;
+}
+
+.basket-total-top{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 24px;
+    border-bottom: 3px dotted #ffdb82;
+    padding-top: 16px;
+}
+
+.basket-total-bottom{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 17px;
+}
+
+.basket-page .odenis{
+    margin-top: 70px;
+    border-radius: 24px;
+    background: linear-gradient(90.00deg, rgb(255, 210, 11),rgb(246, 147, 0) 100%);
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: -5%;
+    text-align: center;
+    border: none;
+    width: 161px;
+    height: 48px;
+    cursor: pointer;
+}
+
+
+.basket-card{
+    display: flex;
+    width: 842px;
+    height: 165px;
+    justify-content: space-between;
+    border: 2px solid #ffdb82;
+    align-items: center;
+    border-radius: 7px;
+    margin-bottom: 20px;
+}
+
+.basket-card-left{
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+}
+
+.basket-card-text h3{
+    color: rgb(49, 49, 49);
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -4%;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.basket-card-text h6{
+    color: rgba(49, 49, 49, 0.75);
+    font-size: 16.82px;
+    font-weight: 300;
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 8px;
+}
+
+.basket-card-count{
+    display: flex;
+    margin-right: 65px;
+    align-items: center;
+}
+
+.basket-card-count button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.basket-card-count h2{
+    color: rgb(14, 14, 14);
+    font-size: 21.03px;
+    font-weight: 300;
+}
+
+
+.empty-basket{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.empty-basket-img{
+    padding-top: 58px;
+}
+
+.empty-basket h1{
+    color: rgb(49, 49, 49);
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 20px;
+    padding-bottom: 65px;
+}
+
+.empty-basket h1 span{
+    font-weight: 500;
+}
+
+.empty-basket button{
+    border-radius: 24px;
+    background: linear-gradient(90.00deg, rgb(255, 210, 11),rgb(246, 147, 0) 100%);
+    width: 161px;
+    height: 48px;
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: -5%;
+    cursor: pointer;
+    border: none;
+    margin-bottom: 50px;
+}
+
+
+
+
+/* BASKET END */
+
+
+/* USER AUTH START */
+
+.register-section{
+    display: flex;
+}
+
+.register-left{
+    width: 55%;
+    /* height: 100vh; */
+    object-fit: cover;
+    box-sizing: border-box;
+    display: flex;
+    align-items: start;
+}
+
+.register-left img{
+    width: 100%;
+    object-fit: cover;
+    height: 100vh;
+}
+
+.register-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+}
+
+.register-right-top{
+    margin-top: 40px;
+    margin-bottom: 45px;
+}
+
+.register-right-top h1{
+    font-family: Italianno;
+    font-size: 37.08px;
+    font-weight: 400;
+    line-height: 26.57px;
+    text-decoration: none;
+    color: #0E0E0E;
+}
+
+.register-right form{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px
+}
+
+.register-right form input{
+    border: none;
+    border-bottom: 1px solid rgb(49, 49, 49);
+    margin-bottom: 15px;
+    width: 380px;
+    outline: none;
+    color: rgb(49, 49, 49);
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 26.57px;
+    padding-bottom: 5px;
+}
+
+.register-right button{
+    border-radius: 36px;
+    background: linear-gradient(90.00deg, rgb(255, 160, 1),rgb(255, 210, 11) 100%);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26.57px;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 65px;
+    text-align: center;
+}
+
+.register-right span{
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 26.57px;
+    color: rgb(49, 49, 49);
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.register-right h6{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #313131;
+    margin-top: 20px;
+    display: flex;
+    text-align: center;
+}
+
+.register-right h6 a{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+    text-decoration: none;
+    color: #fcbe08;
+    margin-left: 5px;
+}
+
+@media(max-width:576px){
+    .register-section{
+        justify-content: center;
+    }
+    
+    .register-left{
+        display: none;
+    }
+
+    .register-right{
+        width: 100%;
+    }
+
+    .register-right form input{
+        width: 300px;
+    }
+}
+
+@media(min-width:768px) and (max-width:834px){
+    .register-right{
+        width: 80%;
+    }
+}
+
+.login-section{
+    display: flex;
+    /* align-items: center; */
+}
+
+.login-left{
+    width: 55%;
+    /* height: 100vh; */
+    object-fit: cover;
+    box-sizing: border-box;
+    display: flex;
+    align-items: start;
+}
+
+.login-left img{
+    width: 100%;
+    object-fit: cover;
+    height: 100vh;
+}
+
+.login-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+}
+
+
+.login-right h1{
+    font-family: Italianno;
+    font-size: 37.08px;
+    font-weight: 400;
+    line-height: 26.57px;
+    text-decoration: none;
+    color: #0E0E0E;
+    margin-top: 100px;
+    margin-bottom: 75px;
+}
+
+.login-right form{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px
+}
+
+.login-right form input{
+    border: none;
+    border-bottom: 1px solid rgb(49, 49, 49);
+    margin-bottom: 20px;
+    width: 380px;
+    outline: none;
+    color: rgb(49, 49, 49);
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 26.57px;
+    padding-bottom: 5px;
+}
+
+.login-right button{
+    border-radius: 36px;
+    background: linear-gradient(90.00deg, rgb(255, 160, 1),rgb(255, 210, 11) 100%);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26.57px;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 65px;
+    text-align: center;
+}
+
+.login-right span{
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 26.57px;
+    color: rgb(49, 49, 49);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.login-right h6{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #313131;
+    margin-top: 20px;
+    display: flex;
+    text-align: center;
+}
+
+.login-right h6 a{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+    text-decoration: none;
+    color: #fcbe08;
+    margin-left: 5px;
+}
+
+@media(max-width:576px){
+    .login-section{
+        justify-content: center;
+    }
+    
+    .login-left{
+        display: none;
+    }
+
+    .login-right{
+        width: 100%;
+    }
+
+    .login-right form input{
+        width: 300px;
+    }
+}
+
+@media(min-width:768px) and (max-width:834px){
+    .login-right{
+        width: 80%;
+    }
+}
+
+.forgot-pass-email{
+    background-image: url(./assets/images/auth/forgotpassword.svg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.forgot-pass-email form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    /* align-items: center; */
+}
+
+.forgot-pass-email h3{
+    color: rgb(49, 49, 49);
+    font-size: 28px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.forgot-pass-email form label{
+    color: rgb(49, 49, 49);
+    font-size: 22px;
+    font-weight: 400;
+    padding-top: 48px;
+    padding-bottom: 16px;
+    text-align: left;
+}
+
+.forgot-pass-email form input{
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(49, 49, 49);
+    width: 380px;
+    padding-bottom: 7.5px;
+    color: rgba(49, 49, 49, 0.67);
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.forgot-pass-email form button{
+    margin-top: 36px;
+    width: 187px;
+    height: 48px;
+    margin-left: 95px;
+    border-radius: 36px;
+    background: linear-gradient(90.00deg, rgb(255, 160, 1),rgb(255, 210, 11) 100%);
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+
+.pass-email-message{
+    background-image: url(./assets/images/auth/forgotpassword.svg);
+    background-size: cover;
+    background-position: center;
+}
+
+.pass-email-message-content{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pass-email-message-content h1{
+    color: rgb(49, 49, 49);
+    font-size: 28px;
+    font-weight: 700;
+    padding-top: 36px;
+    padding-bottom: 24px;
+}
+
+.pass-email-message-content p{
+    color: rgb(49, 49, 49);
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    line-height: 26.57px;
+}
+
+.auth-new-password{
+    background-image: url(./assets/images/auth/forgotpassword.svg);
+    background-size: cover;
+    background-position: center;
+}
+
+.new-password-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: left;
+}
+
+.new-password-content h1{
+    color: rgb(49, 49, 49);
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 48px;
+}
+
+.new-password-content form{
+    display: flex;
+    flex-direction: column;
+}
+
+.new-password-content form input{
+    border: none;
+    border-bottom: 1px solid rgb(49, 49, 49);
+    width: 380px;
+    padding-bottom: 8.58px;
+    color: rgb(49, 49, 49);
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 78px;
+    outline: none;
+}
+
+.new-password-content form button{
+    width: 187px;
+    height: 48px;
+    margin-left: 95px;
+    border-radius: 36px;
+    background: linear-gradient(90.00deg, rgb(255, 160, 1),rgb(255, 210, 11) 100%);
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* USER AUTH END */
+
+

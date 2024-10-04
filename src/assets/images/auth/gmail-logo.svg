@@ -1,0 +1,31 @@
+<svg width="55.864746" height="55.864746" viewBox="0 0 55.8647 55.8647" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<filter id="filter_27_812_dd" x="0.000000" y="0.000000" width="55.864746" height="55.864746" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+			<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+			<feOffset dx="0" dy="1"/>
+			<feGaussianBlur stdDeviation="1.33333"/>
+			<feComposite in2="hardAlpha" operator="out" k2="-1" k3="1"/>
+			<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+			<feBlend mode="normal" in2="BackgroundImageFix" result="effect_dropShadow_1"/>
+			<feBlend mode="normal" in="SourceGraphic" in2="effect_dropShadow_1" result="shape"/>
+		</filter>
+		<clipPath id="clip27_813">
+			<rect id="logos:google-gmail" rx="-0.500000" width="26.332796" height="19.706663" transform="translate(14.973145 17.705811)" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<g filter="url(#filter_27_812_dd)">
+		<circle id="Ellipse 16" cx="27.932373" cy="26.932373" r="23.932373" fill="#FFFFFF" fill-opacity="1.000000"/>
+	</g>
+	<rect id="logos:google-gmail" rx="-0.500000" width="26.332796" height="19.706663" transform="translate(14.973145 17.705811)" fill="#FFFFFF" fill-opacity="0"/>
+	<g clip-path="url(#clip27_813)">
+		<path id="Vector" d="M20.68 37.81L20.68 27.19L17.4 24.18L14.47 22.51L14.47 35.93C14.47 36.97 15.3 37.81 16.33 37.81L20.68 37.81Z" fill="#4285F4" fill-opacity="1.000000" fill-rule="nonzero"/>
+		<path id="Vector" d="M35.59 37.81L39.94 37.81C40.97 37.81 41.8 36.97 41.8 35.93L41.8 22.51L38.47 24.43L35.59 27.19L35.59 37.81Z" fill="#34A853" fill-opacity="1.000000" fill-rule="nonzero"/>
+		<path id="Vector" d="M20.68 27.19L20.23 23.05L20.68 19.08L28.13 24.7L35.59 19.08L36.09 22.83L35.59 27.19L28.13 32.81L20.68 27.19Z" fill="#EA4335" fill-opacity="1.000000" fill-rule="nonzero"/>
+		<path id="Vector" d="M35.59 19.08L35.59 27.19L41.8 22.51L41.8 20.02C41.8 17.7 39.17 16.38 37.33 17.77L35.59 19.08Z" fill="#FBBC04" fill-opacity="1.000000" fill-rule="nonzero"/>
+		<path id="Vector" d="M14.47 22.51L17.33 24.67L20.68 27.19L20.68 19.08L18.94 17.77C17.1 16.38 14.47 17.7 14.47 20.02L14.47 22.51Z" fill="#C5221F" fill-opacity="1.000000" fill-rule="nonzero"/>
+	</g>
+</svg>
