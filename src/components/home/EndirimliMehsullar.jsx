@@ -18,18 +18,28 @@ const EndirimliMehsullar = () => {
     <section className='endirim-mehsullar'>
         <h1><span>Endirimli</span>məhsullar</h1>
         <div className="endirim-mehsullar-top">
+            <EndirimCard/>
+            <EndirimCard/>
+            <EndirimCard/>
+            <EndirimCard/>
+            
             {
-                melumatlar.map((birMelumat) => (
-                  <EndirimCard key={birMelumat.id} qiymet={birMelumat.price} name={birMelumat.name} disqiymet={birMelumat.discounted_price} type={birMelumat.type} endirim={birMelumat.discounted_rate}  />
-                ))
+              
+                // melumatlar.map((birMelumat) => (
+                //   <EndirimCard qiymet={birMelumat.price} name={birMelumat.name} disqiymet={birMelumat.discounted_price} type={birMelumat.type} endirim={birMelumat.discounted_rate}  />
+                // ))
             }
             
         </div>
         <div className="endirim-mehsullar-bottom">
+        <EndirimCard/>
+        <EndirimCard/>
+        <EndirimCard/>
+        <EndirimCard/>
         {
-                melumatlar.map((birMelumat) => (
-                  <EndirimCard key={birMelumat.id} qiymet={birMelumat.price} name={birMelumat.name} disqiymet={birMelumat.discounted_price} type={birMelumat.type} endirim={birMelumat.discounted_rate}  />
-                ))
+                // melumatlar.map((birMelumat) => (
+                //   <EndirimCard qiymet={birMelumat.price} name={birMelumat.name} disqiymet={birMelumat.discounted_price} type={birMelumat.type} endirim={birMelumat.discounted_rate}  />
+                // ))
             }
             
         </div>

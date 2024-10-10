@@ -351,9 +351,7 @@ body{
 
 .bravo-cards{
     display: flex;
-    justify-content: space-between;
-    padding-left: 50px;
-    padding-right: 50px;
+    justify-content: center;
     padding-top: 70px;
     padding-bottom: 80px;
 }
@@ -364,6 +362,10 @@ body{
     position: relative;
     width: 600px;
     height: 355px;
+}
+
+#card-1{
+    margin-right: 33px;
 }
 
 .bravo-card-image{
