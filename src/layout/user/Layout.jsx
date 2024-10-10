@@ -1,23 +1,27 @@
-import React from 'react'
-import { useLocation } from 'react-router-dom'
-import Navbar from "../user/Navbar"
-import Footer from "../user/Footer"
+/* eslint-disable no-unused-vars */
+import React from "react";
+import { Outlet, useLocation } from "react-router-dom";
+import Navbar from "../user/Navbar";
+import Footer from "../user/Footer";
 
-const Layout = ({children}) => {
+const Layout = () => {
+  const location = useLocation();
 
-    const location = useLocation();
+  const hideNavbarFooterRoutes = ["/login", "/register"];
 
-    const hideNavbarFooterRoutes = ["/login","/register"];
-
-    const shouldHideNavbarFooter = hideNavbarFooterRoutes.includes(location.pathname);
+  const shouldHideNavbarFooter = hideNavbarFooterRoutes.includes(
+    location.pathname
+  );
 
   return (
     <>
-        {!shouldHideNavbarFooter && <Navbar/>}
-        <main>{children}</main>
-        {!shouldHideNavbarFooter && <Footer/>}
+      {!shouldHideNavbarFooter && <Navbar />}
+      <main>
+        <Outlet />
+      </main>
+      {!shouldHideNavbarFooter && <Footer />}
     </>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;
