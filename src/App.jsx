@@ -9,6 +9,7 @@ import Register from "./pages/user/auth/Register";
 import NotFoundPage from "./pages/user/NotFoundPage";
 import ProductDetailsPage from "./pages/user/ProductDetailsPage";
 import BasketPage from "./pages/user/BasketPage";
+import AdminLayout from "./components/admin/AdminLayout";
 
 function App() {
   const user = useAuth();
@@ -16,8 +17,9 @@ function App() {
   return (
     <BasketProvider>
       <BrowserRouter>
-        <Layout>
-          <Routes>
+        <Routes>
+          {/* Public/User routes */}
+          <Route element={<Layout />}>
             <Route path="/" element={<HomePage />} />
             <Route
               path="/login"
@@ -30,8 +32,10 @@ function App() {
             <Route path="/productdetails" element={<ProductDetailsPage />} />
             <Route path="/basket" element={<BasketPage />} />
             <Route path="*" element={<NotFoundPage />} />
-          </Routes>
-        </Layout>
+          </Route>
+          {/* Admin  routes */}
+          <Route path="/admin" element={<AdminLayout />} />
+        </Routes>
       </BrowserRouter>
     </BasketProvider>
   );
