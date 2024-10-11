@@ -1,9 +1,20 @@
-import React from 'react'
+import React, {useState,useEffect} from 'react'
 
 import backgroundImage from "../../assets/images/home/yaxin-restoranlar.svg"
 import RestoranCard from './RestoranCard'
 
 const CloseRestorans = () => {
+
+    const [melumatlar,setMelumatlar] = useState([]);
+
+    useEffect(function(){
+      const unvan = "https://mealmeadow.intigam.online/api/restaurants/all/"
+
+      fetch(unvan)
+        .then(melumatlar => melumatlar.json())
+        .then(frontunAnlayacagiForma => setMelumatlar(frontunAnlayacagiForma))
+    },[]);
+
   return (
     <div className="yaxin-restoranlar">
         <div className="yaxin-restoranlar-image"><img src={backgroundImage} alt="" /></div>
@@ -11,14 +22,18 @@ const CloseRestorans = () => {
             <h1><span>Yaxın</span>restoranlar</h1>
             <div className="yaxin-restoranlar-cards">
             <div className="yaxin-restoranlar-top">
-                <RestoranCard/>
-                <RestoranCard/>
-                <RestoranCard/>
+                {
+                  melumatlar.map((birMelumat) =>(
+                    <RestoranCard key={birMelumat.id} name={birMelumat.name}/>
+                  ))
+                }
             </div>
             <div className="yaxin-restoranlar-bottom">
-                <RestoranCard/>
-                <RestoranCard/>
-                <RestoranCard/>
+            {
+                  melumatlar.map((birMelumat) =>(
+                    <RestoranCard key={birMelumat.id} name={birMelumat.name}/>
+                  ))
+                }
             </div>
             </div>
 

@@ -81,6 +81,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .endirim-mehsullar h1{
@@ -106,7 +107,7 @@ body{
     display: flex;
 }
 
-.endirim-mehsullar button{
+.endirim-mehsullar a button{
     width: 161px;
     height: 48px;
     border-radius: 24px;
@@ -124,6 +125,7 @@ body{
 .endirim-card{
     /* display: flex; */
     width: 300px;
+    height: 290px;
     background-color: #f0f0f0;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -206,28 +208,22 @@ body{
 }
 
 .endirim-card-bottom .card-buttons{
-    font-size: 28px;
     display: flex;
-    text-align: center;
-    color: #0E0E0E;
-    cursor: pointer;
     align-items: center;
+    justify-content: center;
+    padding-top: 17px;
 }
 
 .card-buttons .card-sebet{
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background: linear-gradient(90.00deg, rgb(255, 210, 11) 7.201%,rgb(246, 147, 0) 108.01%);
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    display: flex;
-    color: #F5F5F5;
+    width: 36px;
+    height: 36px;
+    background: none;
+    border: none;
 }
 
 .endirim-card-bottom .card-buttons .card-favori{
     color: black;
+    font-size: 28px;
 }
 
 /* ENDIRIMLI MEHSULLAR END */
@@ -248,6 +244,7 @@ body{
     position: relative;
     width: 100%;
     margin-bottom: 869px;
+    align-items: center;
 }
 
 .yaxin-restoranlar-image{
@@ -256,7 +253,6 @@ body{
 
 .yaxin-restoranlar-image img{
     width: 100%;
-
 }
 
 .yaxin-restoranlar-content{
@@ -350,9 +346,7 @@ body{
 
 .bravo-cards{
     display: flex;
-    justify-content: space-between;
-    padding-left: 50px;
-    padding-right: 50px;
+    justify-content: center;
     padding-top: 70px;
     padding-bottom: 80px;
 }
@@ -363,6 +357,10 @@ body{
     position: relative;
     width: 600px;
     height: 355px;
+}
+
+#card-1{
+    margin-right: 33px;
 }
 
 .bravo-card-image{
@@ -509,6 +507,7 @@ body{
     position: relative;
     width: 100%;
     margin-bottom: 463px;
+    align-items: center;
 }
 
 

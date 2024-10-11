@@ -8,6 +8,7 @@ import NotFoundPage from "./pages/user/NotFoundPage";
 import ProductDetailsPage from "./pages/user/ProductDetailsPage";
 import BasketPage from "./pages/user/BasketPage";
 import Profile from "./pages/Profile";
+import AdminLayout from "./components/admin/AdminLayout";
 
 function App() {
   return (
@@ -15,12 +16,14 @@ function App() {
       <Layout>
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route element={<Layout />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/productdetails" element={<ProductDetailsPage />} />
           <Route path="/basket" element={<BasketPage />} />
           <Route path="*" element={<NotFoundPage />} />
+          <Route path="/admin" element={<AdminLayout />} />
         </Routes>
       </Layout>
     </BrowserRouter>

@@ -13,7 +13,7 @@ const Contact = () => {
                     <input type="text" placeholder='Ad, Soyad' />
                     <input type="text" placeholder='E-mail'/>
                 </div>
-                <textarea name="" id="" placeholder='Mətn' fixed></textarea>
+                <textarea name="" id="" placeholder='Mətn' fixed="true"></textarea>
                 <button type="submit">Göndər</button>
             </form>
         </div>

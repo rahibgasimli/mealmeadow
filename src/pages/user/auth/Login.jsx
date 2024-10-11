@@ -1,7 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import axios from "axios";
-import Cookies from "js-cookie"
+import Cookies from "js-cookie";
 import { api } from "../../../config/api";
 
 import loginImage from "../../../assets/images/auth/login.svg";
@@ -13,13 +13,12 @@ const Login = () => {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const navigate = useNavigate();
-  
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     try {
-      const csrfToken=Cookies.get("csrfToken")
+      const csrfToken = Cookies.get("csrfToken");
       const response = await axios.post(
         `${api}/login/`,
         {
@@ -28,7 +27,7 @@ const Login = () => {
         },
         {
           headers: {
-            'X-CSRFToken': csrfToken 
+            "X-CSRFToken": csrfToken,
           },
           // withCredentials: true;
         }

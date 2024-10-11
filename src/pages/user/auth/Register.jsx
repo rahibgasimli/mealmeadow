@@ -99,7 +99,7 @@ const Register = () => {
         <span>və ya</span>
         <GoogleLoginButton>
           <img src={gmailLogo} alt="" />
-          </GoogleLoginButton>
+        </GoogleLoginButton>
         <h6>
           Hesabınız var?<Link to="/login"> Daxil olun</Link>
         </h6>
