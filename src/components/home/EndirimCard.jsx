@@ -1,22 +1,22 @@
 import cardPhoto1 from "../../assets/images/home/test3.png";
 import { CiHeart, CiShoppingBasket } from "react-icons/ci";
-import { useBasket } from "../../hook/BasketContext";
+// import { useBasket } from "../../hook/BasketContext";
 
 const EndirimCard = () => {
-  const { addToBasket } = useBasket();
+  // const { addToBasket } = useBasket();
 
-  const handleAddToBasket = () => {
-    const item = {
-      id: Math.random(),
-      name: "Cio-Cio-san",
-      description: "Vegan plate",
-      price: 25,
-      discountedPrice: 18,
-      image: cardPhoto1,
-    };
-    addToBasket(item);
-    alert(`${item.name} has been added to your basket!`);
-  };
+  // const handleAddToBasket = () => {
+  //   const item = {
+  //     id: Math.random(),
+  //     name: "Cio-Cio-san",
+  //     description: "Vegan plate",
+  //     price: 25,
+  //     discountedPrice: 18,
+  //     image: cardPhoto1,
+  //   };
+  //   // addToBasket(item);
+  //   alert(`${item.name} has been added to your basket!`);
+  // };
 
   return (
     <div className="endirim-card">
@@ -40,7 +40,7 @@ const EndirimCard = () => {
           <a href="#" className="card-favori">
             <CiHeart />
           </a>
-          <button onClick={handleAddToBasket} className="card-sebet">
+          <button  className="card-sebet">
             <CiShoppingBasket />
           </button>
         </div>

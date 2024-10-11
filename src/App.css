@@ -35,17 +35,16 @@ body{
     border: none;
     outline: none;
 }
-
+.navbar-top-buttons{
+    display: flex;
+    gap: 10px;
+}
 .navbar-top-buttons a{
     font-size: 25px;
     color: #F5F5F5;
     padding-top: 28px;
     padding-bottom: 21px;
 } 
-
-.navbar-top .shopping-basket{
-    padding: 0 17px;
-}
 
 .navbar-bottom{
     display: flex;

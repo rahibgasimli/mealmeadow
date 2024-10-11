@@ -1,9 +1,10 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
-import { createUserWithEmailAndPassword } from "firebase/auth";
-import { auth } from "../../../firebase";
 import gmailLogo from "../../../assets/images/auth/gmail-logo.svg";
 import registerLeft from "../../../assets/images/auth/register-left.svg";
+import axios from "axios";
+import { api } from "../../../config/api";
+import GoogleLoginButton from "../../GoogleLoginButton";
 
 const Register = () => {
   const [firstName, setFirstName] = useState("");
@@ -13,24 +14,36 @@ const Register = () => {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [error, setError] = useState(null);
+  const navigate = useNavigate();
 
-  const handleRegister = async (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     if (password !== confirmPassword) {
       setError("Passwords do not match");
       return;
     }
-
     try {
-      const userCredential = await createUserWithEmailAndPassword(
-        auth,
+      const response = await axios.post(`${api}/register/`, {
+        name: firstName,
+        last_name: lastName,
         email,
-        password
-      );
-      console.log("User registered:", userCredential.user);
-    } catch (error) {
-      setError(error.message);
+        password,
+        password2: confirmPassword,
+      });
+
+      if (response.status === 200) {
+        const userData = {
+          firstName,
+          lastName,
+          email,
+          phoneNumber,
+        };
+        localStorage.setItem("user", JSON.stringify(userData));
+        navigate("/profile");
+      }
+    } catch (err) {
+      setError("An error happened during registration.", err);
     }
   };
 
@@ -43,7 +56,7 @@ const Register = () => {
         <div className="register-right-top">
           <h1 className="register-btn">Qeydiyyat</h1>
         </div>
-        <form onSubmit={handleRegister} action="#" method="POST">
+        <form onSubmit={handleSubmit} action="#" method="POST">
           <input
             type="text"
             placeholder="Ad"
@@ -84,9 +97,9 @@ const Register = () => {
           {error ? <p>User artiq movcuddur</p> : <p>{error}</p>}
         </form>
         <span>və ya</span>
-        <a href="#">
+        <GoogleLoginButton>
           <img src={gmailLogo} alt="" />
-        </a>
+          </GoogleLoginButton>
         <h6>
           Hesabınız var?<Link to="/login"> Daxil olun</Link>
         </h6>
