@@ -1,6 +1,6 @@
 import cardPhoto1 from "../../assets/images/home/test3.png";
-import { CiHeart, CiShoppingBasket } from "react-icons/ci";
-// import { useBasket } from "../../hook/BasketContext";
+import { CiHeart } from "react-icons/ci";
+import basketLogo from "../../assets/images/products/basketLogoCard.svg"
 
 const EndirimCard = ({qiymet,disqiymet,name,type,endirim}) => {
 
@@ -28,7 +28,7 @@ const EndirimCard = ({qiymet,disqiymet,name,type,endirim}) => {
             <CiHeart />
           </a>
           <button className="card-sebet">
-            <CiShoppingBasket />
+            <img src={basketLogo} alt="" />
           </button>
         </div>
       </div>

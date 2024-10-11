@@ -1,7 +1,5 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import { useAuth } from "./hook/useAuth";
-import { BasketProvider } from "./hook/BasketContext";
 import Layout from "./layout/user/Layout";
 import HomePage from "./pages/user/HomePage";
 import Login from "./pages/user/auth/Login";
@@ -12,10 +10,8 @@ import BasketPage from "./pages/user/BasketPage";
 import AdminLayout from "./components/admin/AdminLayout";
 
 function App() {
-  const user = useAuth();
 
   return (
-    <BasketProvider>
       <BrowserRouter>
         <Routes>
           {/* Public/User routes */}
@@ -23,11 +19,11 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route
               path="/login"
-              element={user ? <Navigate to="/" /> : <Login />}
+              element={<Login />}
             />
             <Route
               path="/register"
-              element={user ? <Navigate to="/" /> : <Register />}
+              element={<Register />}
             />
             <Route path="/productdetails" element={<ProductDetailsPage />} />
             <Route path="/basket" element={<BasketPage />} />
@@ -37,7 +33,6 @@ function App() {
           <Route path="/admin" element={<AdminLayout />} />
         </Routes>
       </BrowserRouter>
-    </BasketProvider>
   );
 }
 

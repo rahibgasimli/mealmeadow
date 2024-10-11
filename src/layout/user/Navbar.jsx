@@ -1,10 +1,8 @@
 import logo from "../../assets/images/home/navbar-logo.svg"
 import { CiHeart,CiShoppingBasket,CiLogin} from "react-icons/ci";
 import { Link } from 'react-router-dom';
-import { useBasket } from "../../hook/BasketContext";
 
 const Navbar = () => {
-  const {basket}= useBasket();
   return (
     <div className="navbar">
         <div className="navbar-top">
@@ -12,7 +10,7 @@ const Navbar = () => {
             <input type="text" />
             <div className="navbar-top-buttons">
                 <Link to=""><CiHeart/></Link>
-                <Link to="/basket"><CiShoppingBasket className='shopping-basket'/><sup>({basket.length})</sup></Link>
+                <Link to="/cart"><CiShoppingBasket className='shopping-basket'/></Link>
                 <Link to="/login"><CiLogin/></Link>
             </div>
         </div>

@@ -7,7 +7,7 @@ const EndirimliMehsullar = () => {
   const [melumatlar,setMelumatlar] = useState([]);
 
   useEffect(function(){
-    const unvan = "https://mealmeadow.intigam.online/api/foods/all/";
+    const unvan = "https://mealmeadow.intigam.online/api/food/all/";
 
     fetch(unvan)
       .then(melumatlar=>melumatlar.json())
@@ -18,28 +18,21 @@ const EndirimliMehsullar = () => {
     <section className='endirim-mehsullar'>
         <h1><span>Endirimli</span>məhsullar</h1>
         <div className="endirim-mehsullar-top">
-            <EndirimCard/>
-            <EndirimCard/>
-            <EndirimCard/>
-            <EndirimCard/>
-            
             {
-              
-                // melumatlar.map((birMelumat) => (
-                //   <EndirimCard qiymet={birMelumat.price} name={birMelumat.name} disqiymet={birMelumat.discounted_price} type={birMelumat.type} endirim={birMelumat.discounted_rate}  />
-                // ))
+                melumatlar.map((birMelumat) => (
+                  <EndirimCard qiymet={birMelumat.price} name={birMelumat.name} disqiymet={birMelumat.discounted_price} type={birMelumat.type} endirim={birMelumat.discounted_rate}  />
+                ))
             }
+            <EndirimCard/>
+            <EndirimCard/>
+            <EndirimCard/>
             
         </div>
         <div className="endirim-mehsullar-bottom">
-        <EndirimCard/>
-        <EndirimCard/>
-        <EndirimCard/>
-        <EndirimCard/>
         {
-                // melumatlar.map((birMelumat) => (
-                //   <EndirimCard qiymet={birMelumat.price} name={birMelumat.name} disqiymet={birMelumat.discounted_price} type={birMelumat.type} endirim={birMelumat.discounted_rate}  />
-                // ))
+                melumatlar.map((birMelumat) => (
+                  <EndirimCard qiymet={birMelumat.price} name={birMelumat.name} disqiymet={birMelumat.discounted_price} type={birMelumat.type} endirim={birMelumat.discounted_rate}  />
+                ))
             }
             
         </div>
