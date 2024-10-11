@@ -13,19 +13,18 @@ import AdminLayout from "./components/admin/AdminLayout";
 function App() {
   return (
     <BrowserRouter>
-      <Layout>
-        <Routes>
+      <Routes>
+        <Route element={<Layout />}>
           <Route path="/" element={<HomePage />} />
-          <Route element={<Layout />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/productdetails" element={<ProductDetailsPage />} />
           <Route path="/basket" element={<BasketPage />} />
-          <Route path="*" element={<NotFoundPage />} />
           <Route path="/admin" element={<AdminLayout />} />
-        </Routes>
-      </Layout>
+          <Route path="*" element={<NotFoundPage />} />
+        </Route>
+      </Routes>
     </BrowserRouter>
   );
 }
