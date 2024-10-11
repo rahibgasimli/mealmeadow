@@ -9,9 +9,11 @@ const Navbar = () => {
   const navigate = useNavigate();
 
   const handleLogout = () => {
-    confirm("Are you sure for logout?");
-    Cookies.remove("accessToken");
-    navigate("/");
+    const isConfirm = confirm("Are you sure for logout?");
+    if (isConfirm) {
+      Cookies.remove("accessToken");
+      navigate("/");
+    }
   };
 
   return (
