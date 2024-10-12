@@ -14,14 +14,19 @@ const EndirimliMehsullar = () => {
       .then(frontunAnlayacagiForma => setMelumatlar(frontunAnlayacagiForma))
   },[]);
 
+  
+
   return (
     <section className='endirim-mehsullar'>
         <h1><span>Endirimli</span>məhsullar</h1>
         <div className="endirim-mehsullar-top">
             {
-                melumatlar.map((birMelumat) => (
-                  <EndirimCard qiymet={birMelumat.price} name={birMelumat.name} disqiymet={birMelumat.discounted_price} type={birMelumat.type} endirim={birMelumat.discounted_rate}  />
-                ))
+                melumatlar.map((item) => (
+                  <div key={item.id}>
+                  <EndirimCard food={item}/>
+                  </div>
+                )
+                )
             }
             <EndirimCard/>
             <EndirimCard/>

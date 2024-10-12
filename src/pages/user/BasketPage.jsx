@@ -1,7 +1,11 @@
 import BasketCard from "../../components/products/BasketCard";
 import Contact from "../../components/home/Contact";
+import { useSelector } from "react-redux";
 
 const BasketPage = () => {
+  const cartList = useSelector(state => state)
+  console.log(cartList);
+  
 
   return (
     <>

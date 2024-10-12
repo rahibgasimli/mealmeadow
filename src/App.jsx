@@ -8,10 +8,13 @@ import NotFoundPage from "./pages/user/NotFoundPage";
 import ProductDetailsPage from "./pages/user/ProductDetailsPage";
 import BasketPage from "./pages/user/BasketPage";
 import AdminLayout from "./components/admin/AdminLayout";
+import { Provider } from "react-redux";
+import { globalState } from "./redux/store";
 
 function App() {
 
   return (
+    <Provider store={globalState}>
       <BrowserRouter>
         <Routes>
           {/* Public/User routes */}
@@ -26,13 +29,14 @@ function App() {
               element={<Register />}
             />
             <Route path="/productdetails" element={<ProductDetailsPage />} />
-            <Route path="/basket" element={<BasketPage />} />
+            <Route path="/cart" element={<BasketPage />} />
             <Route path="*" element={<NotFoundPage />} />
           </Route>
           {/* Admin  routes */}
           <Route path="/admin" element={<AdminLayout />} />
         </Routes>
       </BrowserRouter>
+      </Provider>
   );
 }
 
