@@ -1,4 +1,7 @@
-import { createStore } from "redux";
+import { combineReducers, createStore } from "redux";
 import { cardListReducer } from "../reducers/cartlist.reducers";
-
-export const globalState = createStore(cardListReducer);
+const reducers = combineReducers({
+    cartList: cardListReducer,
+    // favList:
+})
+export const globalState = createStore(reducers);

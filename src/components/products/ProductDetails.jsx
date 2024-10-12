@@ -8,7 +8,8 @@ import { CiHeart } from "react-icons/ci";
 import EndirimliMehsullar from '../home/EndirimliMehsullar';
 import Contact from '../home/Contact';
 
-const ProductDetails = () => {
+const ProductDetails = (props) => {
+    let {name} = props
     return (
         <>
             <div className='product-details'>
@@ -16,7 +17,7 @@ const ProductDetails = () => {
                 <div className="product-details-center">
                     <div className="product-details-left"><img src={productDetails} alt="" /></div>
                     <div className="product-details-right">
-                        <h3>Sezar salatı</h3>
+                        <h3>{name}</h3>
                         <h4>170 q / 340 kkal </h4>
                         <h6>Tərkibi:</h6>
                         <p>Pomidor, kahı, xiyar , bibər, <br /> toyuq, sezar sous</p>

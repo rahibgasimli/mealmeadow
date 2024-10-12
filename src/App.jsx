@@ -28,7 +28,7 @@ function App() {
               path="/register"
               element={<Register />}
             />
-            <Route path="/productdetails" element={<ProductDetailsPage />} />
+            <Route path="/productdetails/:id" element={<ProductDetailsPage />} />
             <Route path="/cart" element={<BasketPage />} />
             <Route path="*" element={<NotFoundPage />} />
           </Route>

@@ -4,13 +4,13 @@ import basketCardImg from "../../assets/images/products/basket-card.svg"
 import countPlus from "../../assets/images/products/count-plus.svg"
 import countMinus from "../../assets/images/products/count-minus.svg"
 
-const BasketCard = () => {
+const BasketCard = ({name}) => {
     return (
         <div className='basket-card'>
             <div className="basket-card-left">
                 <div className="basket-card-img"><img src={basketCardImg} alt="" /></div>
                 <div className="basket-card-text">
-                    <h3>Sezar salatı</h3>
+                    <h3>{name}</h3>
                     <h6>18 ₼</h6>
                 </div>
             </div>

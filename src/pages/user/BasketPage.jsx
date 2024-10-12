@@ -3,15 +3,18 @@ import Contact from "../../components/home/Contact";
 import { useSelector } from "react-redux";
 
 const BasketPage = () => {
-  const cartList = useSelector(state => state)
+  const { cartList } = useSelector(state => state)
   console.log(cartList);
-  
+
 
   return (
     <>
       <div className="basket-page">
         <div className="basket-page-cards">
-          <BasketCard/>
+          {
+            cartList.map(item => <BasketCard {...item} key={item.id} />)
+          }
+
         </div>
         <div className="basket-total">
           <div className="basket-total-top">
