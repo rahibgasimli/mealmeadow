@@ -11,7 +11,10 @@
   border: 1px solid #ddd;
   text-align: left;
 }
-
+.admin-content {
+  width: 100%;
+  padding-top: 80px;
+}
 .partners-table th {
   font-weight: 600;
 
