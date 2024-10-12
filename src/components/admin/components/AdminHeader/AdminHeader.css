@@ -1,0 +1,40 @@
+header {
+  padding: 16px 32px;
+  box-shadow: 0px 3px 25px 0px rgba(0, 3, 50, 0.1);
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  width: 76%;
+}
+.display {
+  position: relative;
+}
+.display .ring {
+  position: absolute;
+  right: 20px;
+}
+
+.search {
+  width: 250px;
+  border-radius: 99px;
+  background: #f5f5f5;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+}
+.search input {
+  outline: none;
+  flex-grow: 1;
+  margin-left: 5px;
+  background: #f5f5f5;
+  border: 0;
+}
+
+.btn-notification {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}

@@ -1,4 +1,4 @@
-const Orders = () => {
+export const Orders = () => {
   return <div></div>;
 };
 

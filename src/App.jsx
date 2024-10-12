@@ -9,7 +9,6 @@ import ProductDetailsPage from "./pages/user/ProductDetailsPage";
 import BasketPage from "./pages/user/BasketPage";
 import Profile from "./pages/Profile";
 import AdminLayout from "./components/admin/AdminLayout";
-
 function App() {
   return (
     <BrowserRouter>

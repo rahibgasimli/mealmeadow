@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import cardPhoto1 from "../../assets/images/home/test3.png";
 import { CiHeart } from "react-icons/ci";
 import basketLogo from "../../assets/images/products/basketLogoCard.svg"

@@ -1,0 +1,51 @@
+main {
+  display: flex;
+  position: relative;
+}
+aside {
+  width: 220px;
+  height: 100vh;
+  padding: 25px 40px;
+  flex-shrink: 1;
+  box-shadow: 0px 25px 4px 0px rgba(0, 3, 50, 0.1);
+}
+
+aside figure {
+  margin-bottom: 55px;
+}
+
+aside .nav-link {
+  border-radius: 4px;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  color: var(--primaryMineShaft);
+  text-decoration: none;
+  padding: 3px 8px;
+}
+
+.nav-link i {
+  margin: 0 10px;
+}
+
+.nav-link span {
+  line-height: 14px;
+  padding-left: 5px;
+}
+
+aside .nav-link.active {
+  background: linear-gradient(to left, #ffd20b, #f69300);
+  color: #fff;
+  font-weight: 600;
+}
+
+.logo {
+  width: 137px;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
