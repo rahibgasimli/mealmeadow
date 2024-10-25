@@ -12,7 +12,6 @@
 
 body{
     box-sizing: border-box;
-    max-width: 2000px;
     font-family: "Poppins", sans-serif;
 }
 /* NAVBAR START */
@@ -246,22 +245,15 @@ body{
 /* YAXIN RESTORANLAR START */
 
 .yaxin-restoranlar{
-    position: relative;
     width: 100%;
-    margin-bottom: 869px;
+    height: 877px;
+    background-image: url(./assets/images/home/yaxin-restoranlar.svg);
+    background-size: cover;
+    background-position: center;
 }
 
-.yaxin-restoranlar-image{
-    position: absolute;
-}
-
-.yaxin-restoranlar-image img{
-    width: 100%;
-
-}
 
 .yaxin-restoranlar-content{
-    position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -277,6 +269,7 @@ body{
     line-height: 29.58px;
     color: var(--main-yellow);
     padding-bottom: 48px;
+    padding-top: 40px;
 }
 
 .yaxin-restoranlar-content span{
@@ -288,6 +281,7 @@ body{
 
 .yaxin-restoranlar-top{
     display: flex;
+    padding-bottom: 35px;
 }
 
 .yaxin-restoranlar-bottom{
@@ -335,7 +329,7 @@ body{
     bottom: 8px;
 }
 
-.restoran-card-border h1{
+.restoran-card-border h2{
     margin-top: 15px;
     margin-left: 10px;
     color: rgb(255, 255, 255);
@@ -351,9 +345,7 @@ body{
 
 .bravo-cards{
     display: flex;
-    justify-content: space-between;
-    padding-left: 50px;
-    padding-right: 50px;
+    justify-content: center;
     padding-top: 70px;
     padding-bottom: 80px;
 }
@@ -364,6 +356,10 @@ body{
     position: relative;
     width: 600px;
     height: 355px;
+}
+
+#bravoCard1{
+    margin-right: 50px;
 }
 
 .bravo-card-image{
@@ -474,20 +470,17 @@ body{
 /* HOME CATEGORIES START */
 
 .home-categories{
-    position: relative;
     display: flex;
     align-items: center;
     flex-direction: column;
+    background-image: url(./assets/images/home/categoryBackground.svg);
+    background-size: cover;
+    background-position: center;
+    height: 391px;
     margin-top: -9px;
-    margin-bottom: 300px;
-}
-
-.home-categories-img{
-    position: absolute;
 }
 
 .home-categories .categories{
-    position: absolute;
     display: flex;
     margin-top: 120px;
 }
@@ -507,31 +500,24 @@ body{
 /* BIZIMLE ELAQE START */
 
 .bizimle-elaqe{
-    position: relative;
-    width: 100%;
-    margin-bottom: 463px;
-}
-
-
-.contact-image{
-    position: absolute;
-    margin: 0 -0px;
-}
-
-
-
-.contact-image img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
 }
 
 
 .contact-inputs{
-    position: absolute;
+    /* position: absolute; */
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin-top: 36px;
+    margin-top: 6px;
+    background-image: url(./assets/images/home/bizimle-elaqe.svg);
+    background-size: cover;
+    background-position: center;
+    height: 506px;
 }
 
 .contact-inputs h1{
@@ -542,6 +528,7 @@ body{
     -webkit-background-clip:text;
     -webkit-text-fill-color:transparent;
     background-clip:text;
+    padding-top: 60px;
 }
 
 .contact-inputs form{
